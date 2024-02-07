@@ -46,12 +46,12 @@ public class ListenerController {
     private static final long EXPIRE_DURATION = 30000L;
 
 
-    private static final String MISSING_HMAC_SIGNATURE = "de-notification-service";
-    private static final String MISSING_SECRET_VALUE = "de-notification-service";
-    private static final String INVALID_SIGNATURE = "de-notification-service";
-    private static final String MISSING_ATTRIBUTES_IN_SIGNATURE = "de-notification-service";
-    private static final String ERROR_GENERATING_SIGNATURE = "de-notification-service";
-    private static final String SIGNATURE_EXPIRED = "de-notification-service";
+    private static final String MISSING_HMAC_SIGNATURE = "Missing HMAC signature";
+    private static final String MISSING_SECRET_VALUE = "Missing secret value";
+    private static final String INVALID_SIGNATURE = "Invalid signature";
+    private static final String MISSING_ATTRIBUTES_IN_SIGNATURE = "Missing attributes in signature";
+    private static final String ERROR_GENERATING_SIGNATURE = "Error generating signature";
+    private static final String SIGNATURE_EXPIRED = "Signature expired";
 
     private void verifyHmacSignature(String hmac, String secret) throws Exception {
         if (Strings.isNullOrEmpty(hmac)) {
